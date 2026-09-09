@@ -1,4 +1,4 @@
-# classify-files-linux
+# Classify
 
 A small C + Bash tool that lists files/folders and searches for a substring match, built on top of my own custom string library ([simple-strings](https://github.com/SharmathePeak/simple-strings)).
 
