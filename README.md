@@ -7,7 +7,7 @@ A small C + Bash tool that lists files/folders and searches for a substring matc
 ## How it works
 
 1. `clsfy.sh` checks for a hidden cache folder, `.hiddenfolder`. If it doesn't exist, it creates it and compiles `main.c` against `sstring.c` / `sstring.h` into `.hiddenfolder/clsfy`.
-2. It generates (or reuses) `.hiddenfolder/ls.txt` — a directory listing, via `eza` (or `ls` as a fallback).
+2. It generates (or reuses) `.hiddenfolder/ls.txt` — a directory listing, via `ls`.
 3. It runs the compiled binary with a search term as an argument. The C program reads the listing line by line and reports which lines contain the search term.
 4. Optionally, if a second argument is given, it moves that file into `./folder`.
 
@@ -28,7 +28,6 @@ clsfy.sh            — build + run script
 ## Requirements
 
 - `clang` (or swap for `gcc` in `clsfy.sh`)
-- `eza` (optional — falls back to `ls` if not installed)
 - A Unix-like environment (uses `getline`, POSIX shell)
 
 ---

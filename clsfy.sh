@@ -12,7 +12,7 @@ fi
 FILE="./.hiddenfolder/ls.txt"
 
 if [ -f "$FILE" ]; then
-  eza ./folder -D | cat >$FILE
+  ls ./folder -D | cat >$FILE
 else
   touch ./.hiddenfolder/ls.txt
   ls -D | cat >$FILE
